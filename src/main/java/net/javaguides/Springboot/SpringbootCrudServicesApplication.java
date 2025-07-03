@@ -1,5 +1,6 @@
 package net.javaguides.Springboot;
 
+import io.swagger.v3.oas.annotations.ExternalDocumentation;
 import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.info.Contact;
 import io.swagger.v3.oas.annotations.info.Info;
@@ -16,7 +17,8 @@ import org.springframework.context.annotation.Bean;
                                 contact = @Contact(name = "Riza",email = "rizaqureshi5251@gmail.com",
 								url = "https://www.google.com"),
                                 license = @License(name = "Apache 2.0",
-												url="https://www.google.com")))
+												url="https://www.google.com")),
+									externalDocs = @ExternalDocumentation(description = "User Management API Documentation"))
 public class SpringbootCrudServicesApplication {
 
 	@Bean
