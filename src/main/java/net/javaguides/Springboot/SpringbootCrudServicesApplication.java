@@ -11,14 +11,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-@OpenAPIDefinition(info=@Info(title="SpringBott API Documentation",
+@OpenAPIDefinition(info=@Info(title="SpringBoot API Documentation",
 							   description=	"SpringBoot Rest API Documentation",
 								version = "v1.0",
                                 contact = @Contact(name = "Riza",email = "rizaqureshi5251@gmail.com",
 								url = "https://www.google.com"),
                                 license = @License(name = "Apache 2.0",
 												url="https://www.google.com")),
-									externalDocs = @ExternalDocumentation(description = "User Management API Documentation"))
+									externalDocs = @ExternalDocumentation(description = "User Management API Documentation")
+	)
 public class SpringbootCrudServicesApplication {
 
 	@Bean
